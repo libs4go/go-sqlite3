@@ -16,16 +16,14 @@ package sqlite3
 #cgo CFLAGS: -DSQLITE_ENABLE_FTS3
 #cgo CFLAGS: -DSQLITE_ENABLE_FTS3_PARENTHESIS
 #cgo CFLAGS: -DSQLITE_ENABLE_FTS4_UNICODE61
-#cgo CFLAGS: -DSQLITE_ENABLE_ICU
+#cgo CFLAGS: -DSQLITE_ENABLE_FTS5
 #cgo CFLAGS: -DSQLITE_TRACE_SIZE_LIMIT=15
 #cgo CFLAGS: -DSQLITE_OMIT_DEPRECATED
 #cgo CFLAGS: -DSQLITE_DISABLE_INTRINSIC
 #cgo CFLAGS: -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1
 #cgo CFLAGS: -DSQLITE_ENABLE_UPDATE_DELETE_LIMIT
 #cgo CFLAGS: -Wno-deprecated-declarations
-#cgo CFLAGS: -I/usr/local/opt/icu4c/include
 #cgo linux,!android CFLAGS: -DHAVE_PREAD64=1 -DHAVE_PWRITE64=1
-#cgo LDFLAGS: -L/usr/local/opt/icu4c/lib -licuuc -licui18n -licudata
 #include <sqlite3.h>
 #include <stdlib.h>
 #include <string.h>
