@@ -7,11 +7,7 @@ package sqlite3
 
 /*
 
-#ifndef USE_LIBSQLITE3
-#include <sqlite3-binding.h>
-#else
 #include <sqlite3.h>
-#endif
 #include <stdlib.h>
 // These wrappers are necessary because SQLITE_TRANSIENT
 // is a pointer constant, and cgo doesn't translate them correctly.
